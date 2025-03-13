@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.js",
-    "build": "tsc",
+    "build": "mkdir -p dist && cp -r src/* dist/",
     "test": "jest",
     "lint": "eslint . --ext .js,.ts"
   },
