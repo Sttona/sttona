@@ -1,0 +1,26 @@
+{
+  "name": "sttona-backend",
+  "version": "1.0.0",
+  "description": "Sttona CRM and Business Automation Platform - Backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.js",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6",
+    "jest": "^29.6.2",
+    "eslint": "^8.46.0"
+  }
+} 

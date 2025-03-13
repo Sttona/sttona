@@ -18,7 +18,6 @@ services:
   backend:
     build:
       context: ./backend
-      target: production
     volumes:
       - ./backend:/app
       - /app/node_modules
