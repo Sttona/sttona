@@ -18,14 +18,14 @@ services:
   backend:
     build:
       context: ./backend
-      target: development
+      target: production
     volumes:
       - ./backend:/app
       - /app/node_modules
     ports:
       - "4000:4000"
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
       - DATABASE_URL=postgres://postgres:postgres@postgres:5432/sttona
       - REDIS_URL=redis://redis:6379
     depends_on:
